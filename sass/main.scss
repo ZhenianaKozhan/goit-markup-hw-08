@@ -1,6 +1,7 @@
 @import './utils/variables';
+@import './utils/breakpoints';
 @import './base/normalize';
-@import './components/basic';
+@import './utils/basic';
 @import './utils/hidden';
 @import './components/page-hedder';
 @import './components/logo';

@@ -4,8 +4,23 @@
 }
 
 .page-footer__container {
-    display: flex;
-    align-items: baseline;
+    @media screen and (min-width: $tablet) {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: baseline;
+    }
+}
+
+.footer-adress {
+    @media screen and (min-width:$tablet) and (max-width: 1199px) {
+        margin-left: 76px;
+    }
+
+    @media screen and (max-width: 1199px) {
+        text-align: center;
+        margin-bottom: 60px;
+    }
+    
 }
 
 .page-footer__logo-text {
@@ -17,10 +32,8 @@
 }
 
 .address-box__item {
-    margin-top: 9px;
-
-    &:first-child {
-        margin-top: 0;
+    &:not(:first-child) {
+        margin-top: 9px;
     }
 }
 
@@ -48,7 +61,18 @@
 /* Соц. мережі */
 
 .footer-media {
-    margin-left: 70px;
+    @media screen and (min-width: $tablet) and (max-width: 1199px) {
+        margin-left: 165px;
+    }
+
+    @media screen and (max-width: 1199px) {
+        text-align: center;
+        margin-bottom: 60px;
+    }
+   
+    @media screen and (min-width: $desktop) {
+        margin-left: 70px;
+    }
 }
 
 .footer-media__text,
@@ -88,15 +112,30 @@
 /* Форма мейлу */
 
 .mail-input {
-    margin-left: 93px;
+    @media screen and (min-width: $tablet) and (max-width: 1199px) {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    @media screen and (max-width: 1199px) {
+        text-align: center;
+    }
+
+    @media screen and(min-width: $desktop) {
+        margin-left: 93px; 
+    }
 }
 
 .mail-input__form {
-    display: flex;
+    @media screen and (min-width: $desktop) {
+        display: flex; 
+    }
 }
 
 .mail-input__field {
-    min-width: 358px;
+    width: 100%;
+    max-width: 450px;
+    margin-bottom: 20px;
     padding: 15px 16px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -114,14 +153,22 @@
     &:focus {
         outline: 1px solid $primary-bg-color;
     }
+
+    @media screen and (min-width: $desktop) {
+        width: 358px;
+        margin-bottom: 0;
+    }
 }
 
 .mail-input__button {
-    display: flex;
+    display: inline-flex;
     align-items: center;
     justify-content: center;
     min-width: 200px;
-    margin-left: 12px;
+
+    @media screen and(min-width: $desktop) {
+        margin-left: 12px;
+    }
 }
 
 .button__logo {
