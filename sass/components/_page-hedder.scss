@@ -24,11 +24,11 @@
         background-color: $primary-bg-color;
         padding: 48px 40px;
 
-            &.is-open {
-                display: flex;
-            }
+        &.is-open {
+            display: flex;
+        }
     }
-    
+
 
     @media screen and (min-width: $tablet) {
         display: flex;
@@ -36,7 +36,7 @@
     }
 }
 
-    .button-mobile {
+.button-mobile {
     display: inline-block;
     margin: 0;
     padding: 0;
@@ -66,7 +66,7 @@
     @media screen and (max-width:767px) {
         margin-bottom: 302px;
     }
-    
+
     @media screen and (min-width:$tablet) {
         display: flex;
         margin-left: 87px;
@@ -75,7 +75,7 @@
     @media screen and (min-width: $desktop) {
         margin-left: 93px;
     }
-    
+
 }
 
 .site-nav__item {
@@ -87,10 +87,10 @@
 
     @media screen and (min-width: $tablet) {
         margin-left: 50px;
-        
-            &:first-child {
-                margin-left: 0;
-            }
+
+        &:first-child {
+            margin-left: 0;
+        }
     }
 }
 
@@ -128,7 +128,8 @@
 
     @media screen and (min-width:$tablet) {
         position: relative;
-            &::after {
+
+        &::after {
             position: absolute;
             left: 0;
             bottom: -1px;
@@ -138,9 +139,9 @@
             height: 4px;
             background-color: $accent-color;
             border-radius: 2px;
-            }
+        }
     }
-    
+
 }
 
 
@@ -149,7 +150,7 @@
         display: flex;
         flex-direction: column-reverse;
     }
-    
+
     @media screen and (min-width: $tablet) {
         display: block;
         margin-left: 96px;
@@ -174,10 +175,10 @@
 
     @media screen and (min-width: $desktop) {
         margin-left: 50px;
-        
-            &:first-child {
-                margin-left: 0;
-            }
+
+        &:first-child {
+            margin-left: 0;
+        }
     }
 }
 
@@ -230,7 +231,7 @@
     height: 12px;
     margin-right: 8px;
     fill: currentColor;
-    
+
     @media screen and (max-width:767px) {
         display: none;
     }
@@ -258,7 +259,7 @@
 .mobile-social {
     display: flex;
     margin-top: 64px;
-    
+
     @media screen and (min-width:$tablet) {
         display: none;
     }
