@@ -3,7 +3,6 @@
     padding-top: 118px;
     padding-bottom: 118px;
     min-height: 400px;
-    width: 100%;
     max-width: 1600px;
     background-position: center;
     background-repeat: no-repeat;
@@ -59,7 +58,7 @@
     letter-spacing: 0.06em;
     text-transform: uppercase;
 
-    @media screen and (min-width: $tablet) {
+    @media screen and (max-width: 1199px) {
         max-width: 360px;
     }
 
