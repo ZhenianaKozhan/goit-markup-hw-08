@@ -3,6 +3,7 @@
     padding-top: 118px;
     padding-bottom: 118px;
     min-height: 400px;
+    width: 100%;
     max-width: 1600px;
     background-position: center;
     background-repeat: no-repeat;
@@ -45,12 +46,6 @@
                 background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bghero@2x.ipg);
             }
     }
-
-        // @media (min-device-pixel-ratio: 2),
-        // (min-resolution: 192dpi),
-        // (min-resolution: 2dppx) {
-        //     background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bghero@2x.ipg);
-        // }
 }
 
 
@@ -63,6 +58,10 @@
     line-height: 1.62;
     letter-spacing: 0.06em;
     text-transform: uppercase;
+
+    @media screen and (min-width: $tablet) {
+        max-width: 360px;
+    }
 
     @media screen and (min-width: $desktop) {
         max-width: 696px;

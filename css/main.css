@@ -712,6 +712,7 @@ img {
   padding-top: 118px;
   padding-bottom: 118px;
   min-height: 400px;
+  width: 100%;
   max-width: 1600px;
   background-position: center;
   background-repeat: no-repeat;
@@ -770,6 +771,11 @@ img {
   line-height: 1.62;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+}
+@media screen and (min-width: 768px) {
+  .hero__title {
+    max-width: 360px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .hero__title {
