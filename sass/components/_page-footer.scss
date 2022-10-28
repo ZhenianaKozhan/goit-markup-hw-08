@@ -60,6 +60,10 @@
 /* Соц. мережі */
 
 .footer-media {
+    @media screen and (max-width:767px) {
+        margin-top: 60px;
+    }
+
     @media screen and (min-width: $tablet) and (max-width: 1199px) {
         margin-left: 165px;
     }
@@ -110,6 +114,8 @@
 /* Форма мейлу */
 
 .mail-input {
+    margin-top: 60px;
+
     @media screen and (min-width: $tablet) and (max-width: 1199px) {
         margin-left: auto;
         margin-right: auto;

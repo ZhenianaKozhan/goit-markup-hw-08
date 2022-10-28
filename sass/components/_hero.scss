@@ -8,41 +8,41 @@
     background-repeat: no-repeat;
     text-align: center;
 
-    @media screen and (max-width: $mobile) {
+    @media screen and (max-width:767px) {
         max-width: 480px;
-        background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('../images/mbghero.jpg');
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('../images/mbghero.jpg');
         background-size: cover;
 
-        @media screen and (min-device-pixel-ratio: 2),
+        @media (min-device-pixel-ratio: 2),
             (min-resolution: 192dpi),
             (min-resolution: 2dppx) {
-                background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('../images/mbghero@2x.ipg');
+                background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('../images/mbghero@2x.jpg');
             }
     }
 
-    @media screen and (min-width: 481px) and (max-width:$tablet) {
+    @media screen and (min-width: $tablet) and (max-width: 1199px) {
         max-width: 768px;
-        background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/tbghero.jpg);
-        background-size: cover;
+        background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('../images/tbghero.jpg');
+        background-size: contain;
 
         @media screen and (min-device-pixel-ratio: 2),
             (min-resolution: 192dpi),
             (min-resolution: 2dppx) {
-                background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/tbghero@2x.ipg);
+                background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('../images/tbghero@2x.jpg');
             }
     }
 
-    @media screen and (min-width: 769px) {
+    @media screen and (min-width: $desktop) {
         min-height: 600px;
         padding-top: 200px;
         padding-bottom: 200px;
-        background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bghero.jpg);
-        background-size: cover;
+        background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('../images/bghero.jpg');
+        background-size: contain;
 
         @media screen and (min-device-pixel-ratio: 2),
             (min-resolution: 192dpi),
             (min-resolution: 2dppx) {
-                background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bghero@2x.ipg);
+                background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('../images/bghero@2x.jpg');
             }
     }
 }
